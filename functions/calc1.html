@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="ss"><br>
+	<input type="text" id="ss1"><br>
+	<input type="button" onclick="aa()" value="plus">
+	<input type="button" onclick="aa1()" value="minus">
+	<input type="button" onclick="aa2()" value="multi">
+	<input type="button" onclick="aa3()" value="devide">
+	<input type="button" onclick="aa4()" value="clear">
+	
+	<p id="dd"></p>
+	<script>
+		function aa(){
+			a=Number(document.getElementById("ss").value);
+			b=Number(document.getElementById("ss1").value);
+			c=a+b;
+			document.getElementById("dd").innerHTML=c;
+		}
+		function aa1(){
+			a=Number(document.getElementById("ss").value);
+			b=Number(document.getElementById("ss1").value);
+			c=a-b;
+			document.getElementById("dd").innerHTML=c;
+		}
+		function aa2(){
+			a=Number(document.getElementById("ss").value);
+			b=Number(document.getElementById("ss1").value);
+			c=a*b;
+			document.getElementById("dd").innerHTML=c;
+		}
+		function aa3(){
+			a=Number(document.getElementById("ss").value);
+			b=Number(document.getElementById("ss1").value);
+			c=a/b;
+			document.getElementById("dd").innerHTML=c;
+		}
+		function aa4(){
+			document.getElementById("ss").value="";
+			document.getElementById("ss1").value="";
+		document.getElementById("dd").innerHTML="";
+		}
+	</script>
+</body>
+</html>

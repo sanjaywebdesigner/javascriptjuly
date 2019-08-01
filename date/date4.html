@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<input type="text" id="a1" placeholder="enter date"><br>
+	<input type="text" id="a2" placeholder="enter month"><br>
+	<input type="text" id="a3" placeholder="enter year"><br>
+	<input type="button" onclick="dd()">
+	<p id="a4"></p>
+	<script>
+		function dd(){
+		a=new Date();
+		b=a.getDate();
+		c=a.getMonth()+1;
+		d=a.getFullYear();
+			a1=Number(document.getElementById("a1").value);
+			a2=Number(document.getElementById("a2").value);
+			a3=Number(document.getElementById("a3").value);
+			if(b<a1)
+				{
+					if(a2==2)
+						{
+						if(a3%4==0)
+						{aa=b-a1+29;
+			bb=c-a2-1;
+			cc=d-a3;}
+							else{aa=b-a1+28;
+			bb=c-a2-1;
+			cc=d-a3;}
+						}
+					else if((a2==4) || (a2==6) || (a2==9) || (a2==11))
+						{aa=b-a1+30;
+			bb=c-a2-1;
+			cc=d-a3;}
+					else{aa=b-a1+31;
+			bb=c-a2-1;
+			cc=d-a3;}
+				}
+			else{
+			aa=b-a1;
+			bb=c-a2;
+			cc=d-a3;
+			}
+			document.getElementById("a4").innerHTML=aa+" - "+bb+" - "+cc;
+		}
+	
+		
+	</script>
+</body>
+</html>
