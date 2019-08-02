@@ -1,0 +1,19 @@
+first value starting point or value
+final value condition end point or value
+increment or decrement
+
+a=a+1
+a++
+
+
+a=a+2
+a=a+3
+a=a+4
+
+
+a=a-1
+a--
+
+a=a-2
+a=a-3;
+a=a-4;
